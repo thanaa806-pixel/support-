@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trezuno - دعم ومساعدة</title>
+    <title>Trezuno - Support</title>
     <style>
         :root {
             --primary: #315C81;
@@ -33,21 +33,12 @@
             scroll-behavior: smooth;
         }
 
-        /* Arabic RTL Support */
-        [dir="rtl"] {
-            font-family: 'Cairo', sans-serif;
-        }
-
-        [dir="ltr"] {
-            font-family: 'Inter', sans-serif;
-        }
-
         body {
-            font-family: 'Cairo', sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: var(--background-light);
             color: var(--primary-text);
             line-height: 1.6;
-            direction: rtl;
+            direction: ltr;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -57,14 +48,12 @@
             }
         }
 
-        /* Container */
         .max-width {
             max-width: 800px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-        /* Header/Nav */
         .header {
             background-color: var(--primary);
             color: white;
@@ -85,7 +74,6 @@
             text-align: center;
         }
 
-        /* Sections */
         .section {
             margin-bottom: 40px;
         }
@@ -99,7 +87,6 @@
             border-bottom: 1px solid var(--border-light);
         }
 
-        /* Contact Methods */
         .contact-method {
             margin-bottom: 25px;
             padding: 20px;
@@ -146,7 +133,6 @@
             color: var(--primary);
         }
 
-        /* Support Hours */
         .hours {
             background-color: var(--surface-light);
             padding: 20px;
@@ -177,7 +163,6 @@
             border-bottom: none;
         }
 
-        /* Response Time */
         .response-time {
             background-color: var(--success) .05;
             border: 1px solid var(--success);
@@ -190,7 +175,6 @@
             margin-top: 10px;
         }
 
-        /* Quick Links */
         .quick-links {
             margin-top: 20px;
         }
@@ -211,7 +195,6 @@
             color: white;
         }
 
-        /* Language Switch */
         .lang-switch {
             margin-top: 20px;
             padding: 15px;
@@ -228,6 +211,7 @@
 
         .lang-options {
             display: flex;
+            justify-content: center;
             gap: 15px;
         }
 
@@ -250,7 +234,6 @@
             background: var(--border-light);
         }
 
-        /* Footer */
         .footer {
             margin-top: 40px;
             padding: 20px;
@@ -260,7 +243,6 @@
             border-top: 1px solid var(--border-light);
         }
 
-        /* Responsive */
         @media (max-width: 600px) {
             .contact-method {
                 padding: 15px;
@@ -268,10 +250,6 @@
             
             .header h1 {
                 font-size: 24px;
-            }
-            
-            .lang-options {
-                justify-content: center;
             }
         }
     </style>
@@ -282,44 +260,33 @@
         <!-- Header -->
         <div class="header">
             <h1>Trezuno</h1>
-            <p>صفحة الدعم والمساعدة</p>
+            <p>Support Page</p>
         </div>
 
-        <!-- لغة التطبيق -->
+        <!-- About Section -->
         <div class="section">
-            <div class="lang-switch">
-                <h3>اختر اللغة / Choose Language</h3>
-                <div class="lang-options">
-                    <div class="lang-option active" dir="rtl" lang="ar">العربية / Arabic</div>
-                    <div class="lang-option" dir="ltr" lang="en">English</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- معلومات التطبيق -->
-        <div class="section">
-            <h2 class="section-title">حول Trezuno</h2>
+            <h2 class="section-title">About Trezuno</h2>
             <div class="contact-method">
-                <h3>تطبيق Trezuno</h3>
-                <p>تطبيق إدارة ضمانات personales لتنظيم منتجاتك وضماناتك في مكان واحد. التطبيق يخزن جميع البيانات محلياً على جهازك بدون سحابة أو جمع بيانات Third-party.</p>
+                <h3>Trezuno Application</h3>
+                <p>A personal warranty management application to organize your products and track warranty periods in one convenient place. All data is stored locally on your device with no cloud synchronization, no third-party data collection, and no advertisements.</p>
             </div>
         </div>
 
-        <!-- طرق الاتصال -->
+        <!-- Contact Methods -->
         <div class="section">
-            <h2 class="section-title">اتصل بنا</h2>
+            <h2 class="section-title">Contact Us</h2>
             
-            <!-- email -->
+            <!-- Email -->
             <div class="contact-method">
-                <h3><span class="email">thanaa806@gmail.com</span> البريد الإلكتروني</h3>
-                <p>يمكنك إرسال استفساراتك واقتراحاتك عبر هذه الإيميل مباشرة. سيتم الرد خلال 24-48 ساعة.</p>
-                <p class="response-time">وقت الرد المتوقع: 24-48 ساعة</p>
+                <h3><span class="email">thanaa806@gmail.com</span> Email</h3>
+                <p>You can send your inquiries and suggestions via this email directly. Responses within 24-48 hours.</p>
+                <p class="response-time">Expected response time: 24-48 hours</p>
             </div>
 
             <!-- GitHub -->
             <div class="contact-method">
                 <h3><span class="github">GitHub Repository</span></h3>
-                <p>يمكنك مراجعة الكود، الإبلاغ عن أخطاء، أو المساهمة في تطوير التطبيق.</p>
+                <p>You can review the code, report bugs, or contribute to the application development.</p>
                 <p style="margin-top: 10px; font-size: 12px; color: var(--secondary-text);">
                     https://github.com/trezuno/trezuno
                 </p>
@@ -327,41 +294,32 @@
 
             <!-- Hours -->
             <div class="hours">
-                <h3>ساعات العمل</h3>
+                <h3>Working Hours</h3>
                 <ul>
-                    <li>الأحد - الخميس: 9:00 - 18:00</li>
-                    <li>الجمعة: 9:00 - 14:00</li>
-                    <li>السبت: غير متوفر</li>
+                    <li>Sunday - Thursday: 9:00 - 18:00</li>
+                    <li>Friday: 9:00 - 14:00</li>
+                    <li>Saturday: Not Available</li>
                 </ul>
             </div>
         </div>
 
         <!-- Quick Links -->
         <div class="section">
-            <h2 class="section-title">روابط سريعة</h2>
+            <h2 class="section-title">Quick Links</h2>
             <div class="quick-links">
-                <a href="mailto:thanaa806@gmail.com">إرسال إيميل</a>
+                <a href="mailto:thanaa806@gmail.com">Send Email</a>
                 <a href="https://github.com/trezuno/trezuno">GitHub Repository</a>
-                <a href="privacy_policy.html">سياسة الخصوصية</a>
-                <a href="https://github.com/trezuno/trezuno/issues">الإبلاغ عن مشكلة</a>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="https://github.com/trezuno/trezuno/issues">Report an Issue</a>
             </div>
         </div>
 
-        <!-- اللغة -->
-        <div class="section">
-            <div class="lang-switch">
-                <h3>Select Language / اختر لغة</h3>
-                <div class="lang-options">
-                    <div class="lang-option active" dir="rtl" lang="ar">العربية</div>
-                    <div class="lang-option" dir="ltr" lang="en">English</div>
-                </div>
-            </div>
-        </div>
+       
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2026 Trezuno. جميع الحقوق محفوظة.</p>
-            <p>تم تطوير التطبيق بفريق صغير يركز على الخصوصية.</p>
+            <p>&copy; 2026 Trezuno. All rights reserved.</p>
+            <p>Developed by a small team focused on privacy.</p>
         </footer>
 
     </div>
